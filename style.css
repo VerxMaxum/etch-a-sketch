@@ -1,8 +1,12 @@
 #container {
-    width: 800px;
-    height: 800px;
+    width: 832px;
+    height: 832px;
     display: flex;
     flex-wrap: wrap;
     border: 5px black solid;
     align-self: center;
+}
+
+.div-grid {
+    background-color: yellow;
 }
