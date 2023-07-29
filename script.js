@@ -5,7 +5,6 @@ for(let i = 0; i < 16*16; i++) {
     divGridSize = 800 / 16;
     divGrid.style.width = `${divGridSize}px`;
     divGrid.style.height = `${divGridSize}px`;
-    divGrid.style.border = "1px black solid";
     divGrid.style.flex = `1 1 ${divGridSize}px`;
     divGrid.style.minHeight = "0px";
     divGrid.classList.add('div-grid');
