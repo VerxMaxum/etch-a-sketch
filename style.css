@@ -5,7 +5,7 @@ body {
     justify-content: center;
 }
 
-#change-color {
+#resize-button {
     max-width: 200px;
     height: auto;
     align-self: center;
