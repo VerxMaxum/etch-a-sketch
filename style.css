@@ -13,8 +13,8 @@ body {
 }
 
 #container {
-    width: 800px;
-    height: 800px;
+    width: 640px;
+    height: 640px;
     min-width: 0px;
     display: flex;
     flex-wrap: wrap;
