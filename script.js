@@ -16,11 +16,17 @@ for(let i = 0; i < 16*16; i++) {
 
 const divGrids = Array.from(document.getElementsByClassName('div-grid'));
 divGrids.forEach(grid => {
-    grid.addEventListener('mouseenter', addColor);
+    grid.addEventListener('mousemove', randomizeColor);
 });
 
-function addColor(event) {
-    event.target.classList.add('colored');
+function randomizeColor(event) {
+    const hexadecimalDigits = "0123456789ABCDEF";
+    let newColor = "#";
+    for(let i = 0; i < 6; i++) {
+        newColor += hexadecimalDigits[Math.floor(Math.random() * 16)];
+    }
+
+    event.target.style.backgroundColor = newColor;
 }
 
 function resize() {
@@ -52,7 +58,7 @@ function resize() {
     }
     const divGrids = Array.from(document.getElementsByClassName('div-grid'));
     divGrids.forEach(grid => {
-    grid.addEventListener('mouseenter', addColor);
+        grid.addEventListener('mousemove', randomizeColor);
     });
 }
 
