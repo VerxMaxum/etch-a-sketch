@@ -1,6 +1,21 @@
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+}
+
+#change-color {
+    max-width: 200px;
+    height: auto;
+    align-self: center;
+    font-size: 32px;
+}
+
 #container {
-    width: 832px;
-    height: 832px;
+    width: 800px;
+    height: 800px;
+    min-width: 0px;
     display: flex;
     flex-wrap: wrap;
     border: 5px black solid;
